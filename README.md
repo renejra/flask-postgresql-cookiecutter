@@ -86,7 +86,7 @@ Steps for deployment:
 
 5. When `azd` has finished deploying, you'll see an endpoint URI in the command output. Visit that URI, and you should see the front page of the restaurant review app! 🎉 If you see an error, open the Azure Portal from the URL in the command output, navigate to the App Service, select Logstream, and check the logs for any errors.
 
-    ![Screenshot of Flask restaurants website](screenshot_website.png)
+    ![Screenshot of Flask restaurants website](src/assets/screenshot_website.png)
 
 6. When you've made any changes to the app code, you can just run:
 
