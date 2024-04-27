@@ -183,6 +183,7 @@ resource web 'Microsoft.Web/sites@2022-03-01' = {
       AZURE_POSTGRESQL_CONNECTIONSTRING: 'dbname=${pythonAppDatabase.name} host=${postgresServer.name}.postgres.database.azure.com port=5432 sslmode=require user=${postgresServer.properties.administratorLogin} password=${databasePassword}'
       SECRET_KEY: secretKey
       FLASK_DEBUG: 'False'
+      // FLASK_APP: 'src/app.py'
       //Added for Azure Redis Cache
       AZURE_REDIS_CONNECTIONSTRING: 'rediss://:${redisCache.listKeys().primaryKey}@${redisCache.name}.redis.cache.windows.net:6380/0'
     }
